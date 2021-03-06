@@ -1,0 +1,187 @@
+{
+	"info": {
+		"_postman_id": "94c36d02-8217-4f86-a443-254b074ade89",
+		"name": "e-commerce",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "coffeeMachines",
+			"item": [
+				{
+					"name": "Get All large machines",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/coffee-machines?product_type=COFFEE_MACHINE_LARGE",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"coffee-machines"
+							],
+							"query": [
+								{
+									"key": "product_type",
+									"value": "COFFEE_MACHINE_LARGE"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All espresso machines",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/coffee-machines?product_type=ESPRESSO_MACHINE",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"coffee-machines"
+							],
+							"query": [
+								{
+									"key": "product_type",
+									"value": "ESPRESSO_MACHINE"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "coffeePods",
+			"item": [
+				{
+					"name": "Get All large pods",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/coffee-pods?product_type=COFFEE_POD_LARGE",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"coffee-pods"
+							],
+							"query": [
+								{
+									"key": "product_type",
+									"value": "COFFEE_POD_LARGE"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All espresso vanilla pods",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/coffee-pods?product_type=ESPRESSO_POD&coffee_flavor=COFFEE_FLAVOR_VANILLA",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"coffee-pods"
+							],
+							"query": [
+								{
+									"key": "product_type",
+									"value": "ESPRESSO_POD"
+								},
+								{
+									"key": "coffee_flavor",
+									"value": "COFFEE_FLAVOR_VANILLA"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All small pods",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/coffee-pods?product_type=COFFEE_POD_SMALL",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"coffee-pods"
+							],
+							"query": [
+								{
+									"key": "product_type",
+									"value": "COFFEE_POD_SMALL"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All pods sold in 7 dozen packs",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/coffee-pods?pack_size=7",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"coffee-pods"
+							],
+							"query": [
+								{
+									"key": "pack_size",
+									"value": "7"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "url",
+			"value": "http://localhost:3030"
+		}
+	]
+}
